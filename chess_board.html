@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chess_board</title>
+    <style>
+        table {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+        black = true
+        document.write("<table style ='background-color:black;'>");
+            for (var a = 0; a < 8; a++) {
+                if (black == true) {
+                    document.write("<tr style='background-color:black;'>" + "" + "</tr>");
+                    black = false
+                } else {
+                    document.write("<tr style='background-color:white;'>" + "" + "</tr>");
+                    black = true
+                }
+            for (var b = 0; b < 8; b++) {
+                if (black == true) {
+                    document.write("<td style='background-color:black;'>" + "" + "</td>");
+                    black = false
+                } else {
+                    document.write("<td style='background-color:white;'>" + "" + "</td>");
+                    black = true
+                }
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>
