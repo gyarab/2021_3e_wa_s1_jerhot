@@ -7,90 +7,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <style>
-        .img-container{
-            background-image: url(mars.jpg);
-            height: 100%;
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .hero-image{
+            background-image: linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)),
+            url("elon.jpg");
             background-position: center;
-            background-repeat: repeat;
-            background-size: auto;
-            position: center;
-            margin-top: 100px;
-        }
-        .inner-container{
-            text-align: center;
-            position: absolute;
-            width: 100%;
-            color: black;
-            height: auto;
-            margin-top: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        h1{
-            font-size: 7em;
-            font-family: "Shadows into Light", sans-serif;
-        }
-        h2{
-            margin-top: -17px;
-            font-family: "Source Sans Pro", sans-serif;
-            font-size: 1.7em;
-            text-align: center;
-            font-weight: 400;
+        .hero-text{
+            color: #fff;
+            text-align: center ;
         }
 
-        a{
-            margin-top: 20px;
-            font-size: 1.3em;
-            font-family: "Source Sans Pro", sans-serif;
-        }
-        .btn{
-            display: inline-block;
-            width: 200px;
-            font-weight: bold;
-            padding: 10px;
-            color: green;
-            border: 4px solid green;
-            text-align: center;
-            outline: none;
-            text-decoration: none;
-            trasition: background-color 0.2 ease-out, color 0.2s ease-out;
-        }
-        .btn:hover,.btn:active{
-            background-color: #fff;
-            color: green;
-            transition: background-color 0.3s ease-in, color 0.3s ease-in;
+        .hero-text h1{
+            font-size: 50px;
+            font-weight: 500;
         }
 
+        .hero-text p{
+
+        }
 
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" href="#">Veselej Musk INC</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-            </ul>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Moje jmeno je Adam</h1>
+            <p>a prodavam dobrou travu</p>
+            <a href="#" class="hero-btn">Kup si zmrde</a>
         </div>
-    </nav>
-    </div>
-    <div class="img-container">
-        <div class="inner-container">
-            <h1>musk</h1>
-            <h2>co hulí</h2>
-            <img src="elon.jpg" alt="Mars.jpg" width="800" height="600"/>
-            <a class="btn" href="#">Klikni jestli chceš na měsíc s Elonem</a>
-        </div>
-    </div>
 
+
+
+    </div>
 </body>
 </html>
